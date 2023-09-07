@@ -9,6 +9,10 @@ Installation:
  3. Open TamperMonkey dashboard and edit this script
  4. Replace the API_KEY variable with your own API key from https://api.openai.com
 
+Warning:
+ 1. Author is not responsible for any damage caused by this script
+ 2. Remember to maintain academic integrity, using this script to cheat on tests may end up with you being expelled from university or account ban
+
 Limits:
  1. 3 requests to ChatGPT per minute
 
