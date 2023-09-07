@@ -4,7 +4,8 @@
 // @version      0.1
 // @description  Helps to solve tests with ChatGPT
 // @author       Propsi4
-// @include        https://dl.tntu.edu.ua/mods/_standard/tests/take_test.php?*
+// @include      https://dl.tntu.edu.ua/mods/_standard/tests/take_test.php?*
+// @license      MIT
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dl.tntu.edu.ua
 // @grant        none
 // ==/UserScript==
@@ -85,22 +86,16 @@ const api_fetch = (data) => {
     }
     page_wrap.appendChild(hide_button)
     // get only divs with children p and ul.multichoice-question
-    // do not use children[0] and children[1] because it is not reliable
-    // may contain input, dont skip it
     const question_divs = Array.from(row_divs).filter(row_div => {
         const children = Array.from(row_div.children)
         const has_p = children.some(child => child.tagName === "P")
         const has_ul = children.some(child => child.tagName === "UL" && (child.classList.contains("multichoice-question") || child.classList.contains("multianswer-question")))
-        // yes if div has input tag
-        // is multichoice-question or multianswer-question, must be string
         return has_p && has_ul
     })
     const question_data = question_divs.map(question_div => {
         const question_text = question_div.children[0].innerText
-        // if question ul class is multichoice-question, then it is multichoice question
-        // get ul tag
+        
         const type = Array.from(question_div.children).find(child => child.tagName === "UL").classList[0]
-        // ignore last answer, because it is "I don't know"
         if(type == "multichoice-question"){
         const answers = Array.from(question_div.children[1].children).slice(0, -1).map(answer_div => {
             // try to get answer input, if error then skip
@@ -142,7 +137,7 @@ const api_fetch = (data) => {
         }
     }})
 
-    // add a button to every question_div
+    // add a button, textarea to every question_div
     question_divs.forEach((question_div, question_index) => {
         const button = document.createElement("button")
         const textarea = document.createElement("textarea")
