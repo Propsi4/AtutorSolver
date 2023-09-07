@@ -23,3 +23,4 @@ Usage:
  4. Click "Solve" button
  5. Wait for the answer to appear behind the task
  6. If the answer is wrong, click "Solve" again
+![image](https://github.com/Propsi4/AtutorSolver/assets/114924443/f4fe097f-8cd1-4b89-9fcf-48003416640d)
