@@ -26,6 +26,6 @@ This script is in BETA, so it may not work properly.
 
 ## Screenshots
 <p align="center">
-  <img src="[media/main_menu.png](https://user-images.githubusercontent.com/114924443/266242964-f4fe097f-8cd1-4b89-9fcf-48003416640d.png)" alt="example" title="example"/>
+  <img src="example.png" alt="example" title="example"/>
 </p>
 
