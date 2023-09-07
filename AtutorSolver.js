@@ -20,7 +20,7 @@ const api_fetch = (data) => {
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("Authorization", `Bearer ${API_KEY}`);
-    const prompt = data.question_div.children[2].value
+    const prompt = Array.from(data.question_div.children).find(child => child.tagName === "TEXTAREA").value
     xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
         try{
