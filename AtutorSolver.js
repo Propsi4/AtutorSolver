@@ -4,7 +4,8 @@
 // @version      0.1
 // @description  Helps to solve tests with ChatGPT
 // @author       Propsi4
-// @include        https://dl.tntu.edu.ua/mods/_standard/tests/take_test.php?*
+// @include      https://dl.tntu.edu.ua/mods/_standard/tests/take_test.php?*
+// @license      MIT
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dl.tntu.edu.ua
 // @grant        none
 // ==/UserScript==
