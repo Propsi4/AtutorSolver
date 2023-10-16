@@ -14,7 +14,7 @@ This script is in BETA, so it may not work properly.
  2. Remember to maintain academic integrity, using this script to cheat on tests may end up with you being expelled from university or account ban.
 
 ### Limits:
- 1. 3 requests to ChatGPT per minute
+ 1. OpenAI API Limits( like 3 requests per minute)
 
 ### Usage:
  1. Go to dl.tntu.edu.ua and open any test
