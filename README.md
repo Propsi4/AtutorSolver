@@ -4,10 +4,10 @@
 This script is in BETA, so it may not work properly.
 
 ### Installation:
- 1. Install TamperMonkey extension for your browser.
- 2. Install this script by clicking on this link: https://greasyfork.org/en/scripts/474734-atutorsolver.
+ 1. Install TamperMonkey extension for your browser. [Install Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?utm_source=ext_sidebar&hl=uk)
+ 2. Install this script by clicking on this link: [Install Script](https://greasyfork.org/en/scripts/474734-atutorsolver).
  3. Open TamperMonkey dashboard and edit this script.
- 4. Replace the API_KEY variable with your own API key from https://api.openai.com.
+ 4. Replace the **const API_KEY = ""** variable with your own API key from https://api.openai.com.
 
 ### Warning:
  1. Author is not responsible for any damage caused by this script.
