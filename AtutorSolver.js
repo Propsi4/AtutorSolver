@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AtutorSolver
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.3
 // @description  Helps to solve tests with ChatGPT
 // @author       Propsi4
 // @include      https://dl.tntu.edu.ua/mods/_standard/tests/*.php?*
@@ -34,7 +34,7 @@ const api_fetch = (data) => {
         }
     }
     else if(xhr.readyState === 4 && xhr.status === 429){
-        alert("Ви зробили забагато запитів до нейронної мережі, спробуйте ще раз через 1 хвилину. Ліміт запитів 3 запита/хв")
+        alert("Cпробуйте ще раз через 1 хвилину.\n Причини:\n1.Забагато запитів в хвилину.\n2 Можливо, ваш API ключ - не дійсний.")
     }
 }
     console.log(prompt)
